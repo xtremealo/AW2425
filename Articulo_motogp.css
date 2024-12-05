@@ -1,9 +1,114 @@
 
 body {
-    height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana del navegador */
-    margin: 0; /* Elimina márgenes por defecto */
-    background: linear-gradient(to right, #086ee2, #ff3c00); /* Degradado de colores */
+    height: 100vh; 
+    margin: 0; 
+    font-family: 'Arial', sans-serif; 
+    color: #fff; 
+    background: linear-gradient(to right, #086ee2, #ff3c00);
+    overflow-x: hidden; 
 }
 
 
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: #464442; 
+    padding: 10px 20px;
+    position: fixed; 
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+}
+
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff3c00; 
+    cursor: pointer; 
+    transition: transform 0.3s;
+}
+
+nav .logo:hover {
+    transform: scale(1.1);
+}
+
+nav .barnav {
+    display: flex;
+    gap: 20px; 
+}
+
+nav .barnav a {
+    text-decoration: none; 
+    padding: 10px 15px;
+    color: #fff; 
+    text-transform: uppercase; 
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s; 
+    border-radius: 5px; 
+}
+
+nav .barnav a:hover {
+    background: #f13e07; 
+    transform: scale(1.1); 
+}
+
+nav .hamburguesa {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+nav .hamburguesa div {
+    width: 100%;
+    height: 4px;
+    background: #fff; 
+    border-radius: 2px;
+    transition: all 0.3s ease; 
+}
+
+nav .barnav-movil {
+    display: none; 
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    background: #464442;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 999; 
+
+nav .barnav-movil a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav .barnav-movil a:hover {
+    background: #f13e07;
+    transform: scale(1.05);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav .barnav {
+        display: none; /
+    }
+    nav .hamburguesa {
+        display: flex; 
+    }
+    nav .barnav-movil {
+        display: flex; 
+    }
+}
 
