@@ -16,7 +16,7 @@ nav {
     align-items: center;
     background: #464442; 
     padding: 10px 20px;
-    position: fixed; 
+  
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
     z-index: 1000; 
