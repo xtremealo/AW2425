@@ -99,7 +99,7 @@ nav .barnav-movil a:hover {
     transform: scale(1.05);
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
     nav .barnav {
         display: none; /
