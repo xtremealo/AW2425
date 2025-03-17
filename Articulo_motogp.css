@@ -105,18 +105,4 @@ tr:hover {
 }
 
 
-@media (max-width: 768px) {
-    nav .barnav {
-        display: none; /
-    }
-    nav .hamburguesa {
-        display: flex; 
-    }
-    nav .barnav-movil {
-        display: flex; 
-    }
-    
-}
-
-
 
