@@ -6,6 +6,7 @@ body {
     color: #fff;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,16 +19,19 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+
 nav .logo {
     font-size: 24px;
     font-weight: bold;
     color: #f13e07;
 }
 
+
 nav .barnav {
     display: flex;
     gap: 15px;
 }
+
 
 nav .barnav div {
     padding: 10px 20px;
@@ -35,11 +39,13 @@ nav .barnav div {
     border-radius: 5px;
 }
 
+
 nav .barnav div:hover {
     cursor: pointer;
     background: #f13e07;
     color: #fff;
 }
+
 
 .contenido {
     max-width: 1200px;
@@ -51,20 +57,24 @@ nav .barnav div:hover {
     backdrop-filter: blur(5px);
 }
 
+
 h1, h2, h3 {
     text-align: center;
     text-transform: uppercase;
 }
+
 
 p {
     text-align: justify;
     line-height: 1.6;
 }
 
+
 .table-container {
     overflow-x: auto;
     margin: 20px 0;
 }
+
 
 table {
     width: 100%;
@@ -72,22 +82,41 @@ table {
     background: rgba(255, 255, 255, 0.2);
 }
 
+
 th, td {
     border: 1px solid #fff;
     padding: 10px;
     text-align: center;
 }
 
+
 th {
     background: rgba(255, 255, 255, 0.3);
 }
+
 
 tr:nth-child(even) {
     background: rgba(0, 0, 0, 0.3);
 }
 
+
 tr:hover {
     background: rgba(255, 255, 255, 0.4);
 }
+
+
+@media (max-width: 768px) {
+    nav .barnav {
+        display: none; /
+    }
+    nav .hamburguesa {
+        display: flex; 
+    }
+    nav .barnav-movil {
+        display: flex; 
+    }
+    
+}
+
 
 
